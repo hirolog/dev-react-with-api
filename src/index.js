@@ -1,12 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import "./style.css";
 
-import App from "./App";
+import Post from "./Post";
+import { posts } from "./posts";
 
 const rootElement = document.getElementById("root");
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <div className="main">
+      <Post posts={posts} />
+    </div>
   </React.StrictMode>,
   rootElement
 );
